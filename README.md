@@ -3,7 +3,7 @@
 This repository contains the **ACM Task** project — a web development assignment built as part of my learning and practice work.  
 It demonstrates HTML, CSS, and JavaScript skills through an interactive and responsive web page.
 
----
+--------
 
 ## 📂 Project Overview
 
