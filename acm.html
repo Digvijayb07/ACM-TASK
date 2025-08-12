@@ -41,7 +41,7 @@
     </section>
 
 
- <div class="popup">
+    <div class="popup">
         <div class="popup-content">
             <h1>THANK YOU</h1>
             <p>You registration was Successfull</p>
@@ -94,32 +94,36 @@
         <video autoplay muted loop class="blackhole-bg">
             <source src="images/143016-781982529.mp4" type="video/mp4">
         </video>
-        
+
         <div class=" register-content">
             <div class="form-container">
 
 
                 <h2>Register Now</h2>
-                <form class="register-form">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Phone Number" required>
-                    <select required>
+                <form class="register-form"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSd-t0H6sNphgPOoAKTus3DZsb2kZeK7dLMHCnZ2Z61ksd6Xcw/formResponse"
+                    method="POST" target="hidden_iframe" onsubmit="showThankYouPopup()">
+                    <input type="text" name="entry.402528773" placeholder="Full Name" required>
+                    <input type="email" name="entry.1555362749" placeholder="Email" required>
+                    <input type="tel" name="entry.533304584" placeholder="Phone Number" required>
+                    <select name="entry.2015575029" required>
                         <option value="">Department/Branch</option>
                         <option value="CSE">CSE</option>
                         <option value="IT">IT</option>
                         <option value="ENTC">ENTC</option>
                         <option value="MECH">MECH</option>
                     </select>
-                    <select required>
+                    <select name="entry.985338165" required>
                         <option value="">Year of Study</option>
-                        <option value="FY">First Year</option>
-                        <option value="SY">Second Year</option>
-                        <option value="TY">Third Year</option>
-                        <option value="BE">Final Year</option>
+                        <option value="First Year">First Year</option>
+                        <option value="Second Year">Second Year</option>
+                        <option value="Third Year">Third Year</option>
+                        <option value="Final Year">Final Year</option>
                     </select>
                     <button class="submitbtn" type="submit">Submit</button>
                 </form>
+                <iframe name="hidden_iframe" style="display:none;"></iframe>
+
             </div>
 
         </div>
